@@ -4,6 +4,7 @@ public class PremiumBehavior implements UserBehavior{
     private int month;
 
     public PremiumBehavior (int month){
+
         this.month =month;
     }
 
@@ -22,6 +23,7 @@ public class PremiumBehavior implements UserBehavior{
 
     @Override
     public void buyPremium (User owner, int month){
+
         this.month += month;
     }
 
