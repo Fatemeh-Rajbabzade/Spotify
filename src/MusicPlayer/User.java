@@ -90,14 +90,15 @@ public class User  {
         }
     }
 
-    public void createPlaylist (String Title){
-        this.behavior.createPlaylist(title, this);
+    public void createPlaylist (String Title) throws InvalidOperationException{
+
+        this.behavior.createPlaylist(Title, this) ;
     }
 
-    public void playMusic (Music music){
+    public void playMusic (Music music) throws InvalidOperationException{
         this.behavior.playMusic(music);
     }
-    public void buyPremium (User owner, int month){
+    public void buyPremium (User owner, int month) throws InvalidOperationException{
         this.behavior.buyPremium(owner, month);
     }
 
