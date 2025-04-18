@@ -1,7 +1,7 @@
 package MusicPlayer;
 
 public interface UserBehavior {
-    void createPlaylist (String Title, User Owner);
-    void playMusic (Music music);
-    void buyPremium (User owner, int month);
+    void createPlaylist (String Title, User Owner) throws InvalidOperationException;
+    void playMusic (Music music) throws InvalidOperationException;
+    void buyPremium (User owner, int month) throws InvalidOperationException;
 }
